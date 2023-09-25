@@ -16,10 +16,10 @@ on:
 
   workflow_dispatch: # for manual triggering
 
-permissions: 
+permissions:
   contents: write
 
 jobs:
   cleanup-repo:
-    uses: dbt-labs/actions/.github/workflows/swap-labels.yml@er/78-reusable-cleanup
+    uses: dbt-labs/actions/.github/workflows/repository-cleanup.yml@main
     secrets: inherit
